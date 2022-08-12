@@ -12,8 +12,11 @@ const Contact = ({ name, phone, email }) => {
           <div className="row">
             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 text-center">
               <div className="logo">
-                <a href="index.html">
-                  <img src="images/logo.svg" />
+                <a>
+                  <Link to="/">
+                    {" "}
+                    <img src="images/logo.svg" />
+                  </Link>
                 </a>
               </div>
             </div>
@@ -47,8 +50,8 @@ const Contact = ({ name, phone, email }) => {
           <div className="row">
             <div className="col-sm-12 col-md-12 text-center">
               <div className="contact-header-quote">
-                <h4>"XXXXXX"</h4>
-                <h4>-XXXDXy</h4>
+                <h4>{name}</h4>
+                <h4>-{phone}</h4>
               </div>
             </div>
           </div>
@@ -63,16 +66,15 @@ const Contact = ({ name, phone, email }) => {
                   me. If you prefer another email client other than your
                   default, which will appear after clicking the button and have
                   all of the information you just entered, you can email me at
-                  XXXXXX.
+                  {email}.
                 </p>
                 <br />
                 <br />
                 <br />
                 <h2>Contact Information</h2>
-                <p>XXXX</p>
-                <p>XXXX</p>
-                <p>(XXXX)-445-7747</p>
-                <p>XXXXXX@gmail.com</p>
+                <p>{name}</p>
+                <p>{phone}</p>
+                <p>{email}</p>
               </div>
             </div>
             <div className="col-sm-6 col-md-6">
@@ -170,19 +172,19 @@ const Contact = ({ name, phone, email }) => {
           <div className="row">
             <div className="col-sm-6 col-md-6 text-right">
               <div className="personal-contact phone">
-                <h4>Phone: XXXXXX</h4>
+                <h4>Phone: {phone}</h4>
               </div>
             </div>
             <div className="col-sm-6 col-md-6 text-left">
               <div className="personal-contact email-personal-contact">
-                <h4>Email: XXXXX@gmail.com</h4>
+                <h4>Email: {email}</h4>
               </div>
             </div>
           </div>
           <div className="row">
             <div className="col-sm-4 col-md-4 text-center">
               <div className="company-information">
-                <h3>XXXX</h3>
+                <h3>{name}</h3>
                 <h4>Copyright © 2021</h4>
                 <h4>NY</h4>
               </div>

@@ -15,14 +15,42 @@ import Contact from "./pages/Contact";
 import Porfolio from "./pages/Porfolio";
 
 const App = () => {
+  const info = {
+    name: "Test Name",
+    phone: "832 234 5678",
+    email: "vvv123@gmail.com",
+  };
   return (
     <>
       <Router>
         <Routes>
           <Route path="/" element={<Navigate replace to="/main" />} />
-          <Route path="/main" element={<MainPage />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/porfolio" element={<Porfolio />} />
+          <Route
+            path="/main"
+            element={
+              <MainPage
+                name={info.name}
+                phone={info.phone}
+                email={info.email}
+              />
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <Contact name={info.name} phone={info.phone} email={info.email} />
+            }
+          />
+          <Route
+            path="/porfolio"
+            element={
+              <Porfolio
+                name={info.name}
+                phone={info.phone}
+                email={info.email}
+              />
+            }
+          />
         </Routes>
       </Router>
     </>

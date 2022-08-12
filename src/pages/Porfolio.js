@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Porfolio = ({ name, phone }) => {
+const Porfolio = ({ name, phone, email }) => {
   const [count, setCount] = useState(" useState Val ");
 
   return (
@@ -11,8 +11,11 @@ const Porfolio = ({ name, phone }) => {
           <div className="row">
             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 text-center">
               <div className="logo">
-                <a href="index.html">
-                  <img src="images/logo.svg" />
+                <a>
+                  <Link to="/">
+                    {" "}
+                    <img src="images/logo.svg" />
+                  </Link>
                 </a>
               </div>
             </div>
@@ -166,19 +169,19 @@ const Porfolio = ({ name, phone }) => {
           <div className="row">
             <div className="col-sm-6 col-md-6 text-right">
               <div className="personal-contact phone">
-                <h4>Phone: XXXXXX</h4>
+                <h4>Phone: {phone}</h4>
               </div>
             </div>
             <div className="col-sm-6 col-md-6 text-left">
               <div className="personal-contact email-personal-contact">
-                <h4>Email: XXXXX@gmail.com</h4>
+                <h4>Email: {email}</h4>
               </div>
             </div>
           </div>
           <div className="row">
             <div className="col-sm-4 col-md-4 text-center">
               <div className="company-information">
-                <h3>XXXX</h3>
+                <h3>{name}</h3>
                 <h4>Copyright © 2021</h4>
                 <h4>NY</h4>
               </div>
