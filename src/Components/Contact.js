@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import NavComponent from "./NavComponent";
 
 const Contact = ({ name, phone, email }) => {
   const [count, setCount] = useState(" useState Val ");
@@ -7,7 +8,7 @@ const Contact = ({ name, phone, email }) => {
   return (
     <>
       {/* Navigation Bar */}
-      <div className="navigation">
+      {/* <div className="navigation">
         <div className="container-fluid">
           <div className="row">
             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 text-center">
@@ -37,7 +38,8 @@ const Contact = ({ name, phone, email }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <NavComponent />
       <div className="contact">
         <div className="container-fluid">
           <div className="row">

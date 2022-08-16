@@ -10,9 +10,9 @@ import {
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.js";
-import MainPage from "./pages/MainPage";
-import Contact from "./pages/Contact";
-import Porfolio from "./pages/Porfolio";
+import MainPage from "./Components/MainPage";
+import Contact from "./Components/Contact";
+import Porfolio from "./Components/Porfolio";
 
 const App = () => {
   const info = {

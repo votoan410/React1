@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import NavComponent from "./NavComponent";
+import BodyContentComponent from "./BodyContent";
+import AboutComponent from "./AboutComponent";
 const MainPage = ({ name, phone, email }) => {
   return (
     <>
-      <div className="navigation">
+      {/* <div className="navigation">
         <div className="container-fluid">
           <div className="row">
             <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1 text-center">
@@ -34,9 +36,10 @@ const MainPage = ({ name, phone, email }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <NavComponent />
       {/* Main body content */}
-      <div className="main">
+      {/* <div className="main">
         <div className="container-fluid">
           <div className="row">
             <div className="entry-banner text-center">
@@ -62,8 +65,9 @@ const MainPage = ({ name, phone, email }) => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="about" id="about">
+      </div> */}
+      <BodyContentComponent name={name} />
+      {/* <div className="about" id="about">
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-12 col-md-12 text-center">
@@ -124,9 +128,10 @@ const MainPage = ({ name, phone, email }) => {
               </div>
             </div>
           </div>
-          {/* Include arrow to show timeline */}
+          Include arrow to show timeline
         </div>
-      </div>
+      </div> */}
+      <AboutComponent />
       <div className="summary">
         <div className="container-fluid">
           <div className="row">

@@ -4,9 +4,7 @@ import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.js";
 
-import HelloMessage2 from "./components/HelloMessage2";
 import App from "./App";
-import MainPage from "./pages/MainPage";
 
 // Ecmascript vs Javascript vs Node
 // Ecmascript:  Syntax standard : ES5 ES6 ES7..
